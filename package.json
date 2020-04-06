@@ -1,0 +1,33 @@
+{
+  "name": "create_boilerplate",
+  "version": "1.0.0",
+  "description": "create boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack --mode production",
+    "lint": "eslint 'src/**/*'",
+    "lint:fix": "eslint 'src/**/*' --fix"
+  },
+  "author": "Fabiola Orellana",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "5.15.2",
+    "eslint-loader": "2.1.2",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-react": "7.12.4",
+    "path": "^0.12.7",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
