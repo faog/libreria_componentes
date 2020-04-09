@@ -1,7 +1,7 @@
 {
-  "name": "create_boilerplate",
+  "name": "libreria_componentes",
   "version": "1.0.0",
-  "description": "create boilerplate",
+  "description": "Libreria de componentes con storybook",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
@@ -9,7 +9,9 @@
     "lint": "npm run lint:js && npm run lint:css",
     "lint:css": "stylelint 'src/**/*.css'",
     "lint:fix": "eslint 'src/**/*.{js,jsx}' --fix",
-    "lint:js": "eslint 'src/**/*.{js,jsx}'"
+    "lint:js": "eslint 'src/**/*.{js,jsx}'",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "author": "Fabiola Orellana",
   "license": "ISC",
@@ -17,6 +19,10 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/react": "^5.3.18",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
     "css-loader": "2.1.1",
@@ -42,7 +48,7 @@
     "webpack-dev-server": "3.2.1"
   },
   "dependencies": {
-    "prop-types": "15.7.2",
+    "prop-types": "^15.7.2",
     "react": "16.8.4",
     "react-dom": "16.8.4",
     "react-redux": "6.0.1",
