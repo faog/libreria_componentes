@@ -48,7 +48,7 @@
     "vars-on-top": "warn",
     "generator-star-spacing": "warn",
     "comma-dangle": "warn",
-    "max-len": "warn",
+    "max-len": ["error", { "code": 120 }],
     "import/no-duplicates": "warn",
     "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
   },
