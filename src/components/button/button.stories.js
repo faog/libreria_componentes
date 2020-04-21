@@ -1,9 +1,10 @@
 import React from 'react'
 import {storiesOf} from '@storybook/react'
-import CallToAction from './cta-button'
 import {action} from '@storybook/addon-actions'
+import CallToAction from './cta-button'
 
-storiesOf("Bulding Blocks | Button", module)
-.add("Call to Action", () => (
-  <CallToAction label="submit" onClick={action("button-click")}/>
+
+storiesOf('Bulding Blocks | Button', module)
+.add('Call to Action', () => (
+  <CallToAction label='submit' onClick={action('button-click')}/>
 ))

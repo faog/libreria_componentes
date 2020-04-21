@@ -23,7 +23,10 @@
     "files": ["*.js", "*.jsx"]
   }],
   "rules":{
-    "react/prop-types": "warn",
+    "react/prop-types": [
+      "enabled",
+      { "ignore": "ignore", "customValidators": "customValidator" }
+    ],
     "class-methods-use-this": "warn",
     "complexity": "warn",
     "global-require": "warn",
